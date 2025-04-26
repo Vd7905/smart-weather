@@ -9,7 +9,6 @@ const image = document.querySelector(".image");
 const weatherContainer = document.querySelector('.weather-card-container');
 const themeToggleButton = document.querySelector('.theme-toggle');
 
-require('dotenv').config();
 
 // Check if the user has a preferred theme in localStorage
 if (localStorage.getItem('theme') === 'light') {
@@ -72,7 +71,7 @@ async function loadCities() {
 
 var imageNumber = 2;
 
-const apiKey = process.env.API_KEY;
+const apiKey = "ea7344a0af339968d7cfd74ef38df117";
 
 
 function debounce(fn, delay) {
