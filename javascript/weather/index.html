@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <nav class="nav-bar">
+
+    <div class="logo">Dark Weather</div>
+    <div class="nav-items">
+        <div>Home</div>
+        <div>Contact Us</div>
+    </div>
+    <div style="display: flex; gap: 20px;">
+    <button class="theme-toggle">🌙</button>
+    <div class="sign-up">
+        <button>Sign Up</button>
+    </div>
+
+    </div>
+   </nav>
+
+   <div class="hero">
+    <div class="quote">
+        Seeing the Whole World With Dark Weather
+    </div>
+    <div class="top-bar">
+        <input type="text" class="search-bar" placeholder="Enter City">
+
+        <div class="filter">
+            Filters 
+            <select class="weather-filter">
+               
+                    <option value="">Select Weather</option>
+                    <option value="Clear">Clear</option>
+                    <option value="Clouds">Clouds</option>
+                    <option value="Rain">Rain</option>
+                    <option value="Drizzle">Drizzle</option>
+                    <option value="Thunderstorm">Thunderstorm</option>
+                    <option value="Snow">Snow</option>
+                    <option value="Mist">Mist</option>
+                    <option value="Fog">Fog</option>                          
+            </select>      
+            
+            <select class="temp-filter">
+                    <option value="">Select Temperature</option>
+                    <option value="cold">Below 10°C</option>
+                    <option value="mild">10°C to 30°C</option>
+                    <option value="hot">Above 30°C</option>
+              </select>
+                
+        </div>
+
+
+    </div>
+    <div class="weather-card-container">
+        
+    </div>
+   </div>
+   <script src="main.js"></script>
+</body>
+</html>

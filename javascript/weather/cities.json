@@ -1,0 +1,15 @@
+{
+   "cities" : [
+        "Ahmedabad", "Bangalore", "Chennai", "Delhi", "Hyderabad", "Kolkata", "Mumbai", "Pune", "Surat", "Jaipur",
+        "Lucknow", "Kanpur", "Nagpur", "Indore", "Thane", "Vadodara", "Bhopal", "Visakhapatnam", "Patna", "Chandigarh",
+        "Coimbatore", "Mysuru", "Ludhiana", "Agra", "Madurai", "Nashik", "Faridabad", "Meerut", "Rajkot", "Kochi",
+        "Vijayawada", "Guwahati", "Chandrapur", "Dehradun", "Udaipur", "Srinagar", "Jodhpur", "Kochi", "Dhanbad",
+        "Gurgaon", "Noida", "Bhubaneswar", "Ranchi", "Raipur", "Jammu", "Bareilly", "Gwalior", "Shimla", "Jabalpur",
+        "Tirunelveli", "Kolkata", "Pondicherry", "Haridwar", "Bhilai", "Aurangabad", "Satna", "Agartala", "Navi Mumbai",
+        "Aligarh", "Allahabad", "Jalgaon", "Vijayawada", "Gwalior", "Bokaro", "Bhilwara", "Rourkela", "Muzaffarpur",
+        "Karnal", "Patiala", "Chittoor", "Solapur", "Amritsar", "Siliguri", "Bhavnagar", "Bikaner", "Kozhikode", "Dibrugarh",
+        "Tirupati", "Nellore", "Karur", "Nagapattinam", "Thanjavur", "Nandurbar", "Karachi", "Trivandrum", "Sangli",
+        "Gulbarga", "Hosur", "Warangal", "Chhapra", "Udupi", "Chhattisgarh", "Kolhapur", "Palakkad", "Saharanpur",
+        "Jalandhar", "Nagapattinam", "Rajahmundry", "Gurgaon", "Haldwani", "Bidar", "Yavatmal", "Tirunelveli", "Belgaum"
+      ]
+}

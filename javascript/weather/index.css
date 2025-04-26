@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --light-bg: white;
+    --light-bg-nav: #f0f0f0; /* Lighter navbar color for light mode */
+    --light-text: black;
+    --dark-bg: #181818; /* Dark background for dark mode */
+    --dark-text: #e0e0e0; /* Light text for dark mode */
+    --dark-bg-nav: #2c3e50; /* Dark navbar color for dark mode */
+    --dark-bg-filter: #444; /* Dark background for filters */
+    --dark-text-filter: #ccc; /* Light text for filters */
+    --light-bg-filter: #f1f1f1; /* Light background for filters */
+    --light-text-filter: #333; /* Dark text for filters */
+    --highlight-color: #3a86ff; /* Highlight color */
+  }
+
+  body {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+  
+  body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+  
+  body.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+  }
+  
+  button.dark-mode {
+    background-color: #34495e;
+    color: white;
+  }
+  
+  body.light-mode button.dark-mode {
+    background-color: #34495e;
+    color: white;
+  }
+
+  /* NavBar */
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+  }
+  body.light-mode .nav-bar {
+    background-color: var(--light-bg-nav); /* Light navbar */
+  }
+  .nav-bar .dark-mode {
+    background-color: var(--dark-bg-nav);
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .theme-toggle {
+    font: bold;
+    background-color: grey;
+    border: none;
+    height: 35px;
+    width: 35px;
+    display: flex; /* Align the text */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; 
+    border-radius: 50%;
+    color: black;
+  }
+  
+  body.light-mode .nav-bar .theme-toggle {
+    color: var(--light-text); /* Light mode theme toggle */
+  }
+  
+  .nav-items {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-items div {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-items div:hover {
+    color: #3a86ff;
+  }
+  
+  .sign-up button {
+    background-color: #3a86ff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign-up button:hover {
+    background-color: #2f6ee6;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .quote  {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #7f7676;
+  }
+  
+  /* Top Search Bar */
+  .top-bar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .search-bar {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    background-color: #1f1f1f;
+    color: white;
+  }
+  
+  .filter {
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  .weather-filter, .temp-filter{
+    background-color: #1f1f1f;
+    color: #ccc;
+    border-radius: 1rem;
+  }
+
+body.light-mode .search-bar,
+body.light-mode .filter, body.light-mode .weather-filter, body.light-mode .temp-filter {
+  background-color: var(--light-bg-filter); /* Light filter background */
+  color: var(--light-text-filter); /* Light filter text */
+}
+  /* Weather Cards */
+  .weather-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .weather-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+    position: relative;
+
+  }
+  body.light-mode .weather-card {
+    background-color: #f1f1f1; /* Light background for weather cards */
+  }
+  .weather-card img {
+    position: absolute;
+    top: -40px;     /* half outside */
+    right: -40px;   /* shift beyond the card border */
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+    z-index: 1;
+  }
+  .weather-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .weather-card p {
+    margin: 0.5rem 0;
+    color: #dddddd;
+  }
+
+  body.light-mode .weather-card p {
+    color: #333; /* Light text color in weather cards */
+  }
+
+  @media (max-width: 768px) {
+    .nav-items {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .weather-card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  
